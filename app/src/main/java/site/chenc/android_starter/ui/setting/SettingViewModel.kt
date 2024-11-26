@@ -7,7 +7,12 @@ import androidx.lifecycle.ViewModel
 class SettingViewModel : ViewModel() {
 
     private val _text = MutableLiveData<String>().apply {
-        value = "This is notifications Fragment"
+        value = "当前进度: 0"
+    }
+
+
+    fun updateText(progress: Int) {
+        _text.value = "当前进度 $progress"
     }
     val text: LiveData<String> = _text
 }
