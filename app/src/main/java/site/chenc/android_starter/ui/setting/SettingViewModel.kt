@@ -6,9 +6,9 @@ import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
 import kotlinx.coroutines.launch
 import site.chenc.android_starter.http.model.UserResponse
-import site.chenc.android_starter.http.repository.userRepository
+import site.chenc.android_starter.http.repository.UserRepository
 
-class SettingViewModel(private val userRepository: userRepository) : ViewModel() {
+class SettingViewModel(private val userRepository: UserRepository) : ViewModel() {
 
     private val _text = MutableLiveData<String>().apply {
         value = "当前进度: 0"
