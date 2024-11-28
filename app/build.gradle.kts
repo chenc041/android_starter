@@ -52,4 +52,9 @@ dependencies {
     androidTestImplementation(libs.androidx.junit)
     androidTestImplementation(libs.androidx.espresso.core)
     implementation(libs.okhttp)
+    implementation(libs.retrofit)
+    implementation(libs.converter.jackson)
+    implementation(libs.jackson.databind)
+    implementation(libs.logging.interceptor)
+
 }
